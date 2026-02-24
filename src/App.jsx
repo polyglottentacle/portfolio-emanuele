@@ -520,15 +520,15 @@ export default function App() {
             </p>
             
             <div className="flex justify-center gap-6 mb-10">
-               <a href="https://linkedin.com/in/emanuele-g" target="_blank" rel="noreferrer" className="p-4 border-[4px] border-black bg-white text-black hover:-translate-y-2 hover:bg-[#B05BFF] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
+               <a href=" https://linkedin.com/in/emanuele-g → https://www.linkedin.com/in/e-g-a5482b355/" target="_blank" rel="noreferrer" className="p-4 border-[4px] border-black bg-white text-black hover:-translate-y-2 hover:bg-[#B05BFF] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
                  <Linkedin size={32} />
                </a>
-               <a href="https://github.com/EmanuelleG" target="_blank" rel="noreferrer" className="p-4 border-[4px] border-black bg-white text-black hover:-translate-y-2 hover:bg-[#FFC900] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
+               <a href=" github.com/polyglottentacle"p-4 border-[4px] border-black bg-white text-black hover:-translate-y-2 hover:bg-[#FFC900] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
                  <Github size={32} />
                </a>
             </div>
             
-            <a href="mailto:emanuelework2024@gmail.com" className="block w-full bg-black text-white py-6 text-xl md:text-2xl font-black uppercase tracking-widest border-[4px] border-black hover:bg-white hover:text-black transition-all shadow-[8px_8px_0px_0px_rgba(0,0,0,0.5)]">
+            <a href="mailto:polyglottentacle@gmail.com" className="block w-full bg-black text-white py-6 text-xl md:text-2xl font-black uppercase tracking-widest border-[4px] border-black hover:bg-white hover:text-black transition-all shadow-[8px_8px_0px_0px_rgba(0,0,0,0.5)]">
               {t.buttons.contact}
             </a>
           </div>
