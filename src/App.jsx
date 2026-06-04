@@ -485,7 +485,7 @@ export default function App() {
                     </div>
                     
                     <button 
-  linkedin.com                    onClick={() => setSelectedProject(proj)}
+            onClick={() => setSelectedProject(proj)}
                       className="self-start flex items-center gap-4 bg-black text-white px-6 md:px-8 py-3 md:py-4 uppercase font-black tracking-widest text-sm md:text-lg hover:bg-white hover:text-black transition-all border-[4px] border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,0.5)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
                     >
                       {proj.link ? t.buttons.unlock : "🚧 lavori in corso"} <Rocket size={24} className="group-hover:translate-x-2 transition-transform" />
