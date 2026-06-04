@@ -485,7 +485,7 @@ export default function App() {
                     </div>
                     
                     <button 
-                      onClick={() => setSelectedProject(proj)}
+  linkedin.com                    onClick={() => setSelectedProject(proj)}
                       className="self-start flex items-center gap-4 bg-black text-white px-6 md:px-8 py-3 md:py-4 uppercase font-black tracking-widest text-sm md:text-lg hover:bg-white hover:text-black transition-all border-[4px] border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,0.5)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
                     >
                       {proj.link ? t.buttons.unlock : "🚧 lavori in corso"} <Rocket size={24} className="group-hover:translate-x-2 transition-transform" />
@@ -523,7 +523,7 @@ export default function App() {
                <a href="https://www.linkedin.com/in/e-g-a5482b355/" target="_blank" rel="noreferrer" className="p-4 border-[4px] border-black bg-white text-black hover:-translate-y-2 hover:bg-[#B05BFF] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
                  <Linkedin size={32} />
                </a>
-               <a href="https://github.com/polyglottentacle"p-4 border-[4px] border-black bg-white text-black hover:-translate-y-2 hover:bg-[#FFC900] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
+               <a href="https://github.com/polyglottentacle" className="p-4 border-[4px] border-black bg-white text-black hover:-translate-y-2 hover:bg-[#FFC900] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
                  <Github size={32} />
                </a>
             </div>
