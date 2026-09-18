@@ -119,13 +119,13 @@ export default function App() {
             <div className="availability"><MapPin aria-hidden="true" size={18} />Open to opportunities in the Netherlands · Remote or hybrid</div>
           </div>
           <div className="hero-showcase" aria-label="Preview of deployed work">
-            <a className="hero-preview hero-preview-main" href="https://nexus-gym-lgs3ytq0m-polyglottentacles-projects.vercel.app" target="_blank" rel="noreferrer">
-              <img src="/nexus-gym.png" alt="NEXUS Gym product shown on desktop and mobile" />
-              <span><strong>NEXUS Gym</strong>Live product <ArrowUpRight aria-hidden="true" size={16} /></span>
-            </a>
-            <a className="hero-preview hero-preview-secondary" href="https://cleanfood-ops-source-gzp67vyti-polyglottentacles-projects.vercel.app" target="_blank" rel="noreferrer">
+            <a className="hero-preview hero-preview-main" href="https://cleanfood-ops-source-gzp67vyti-polyglottentacles-projects.vercel.app" target="_blank" rel="noreferrer">
               <img src="/cleanfood-ops.png" alt="CleanFood Ops role-based work interface" />
               <span><strong>CleanFood Ops</strong>Live operations demo <ArrowUpRight aria-hidden="true" size={16} /></span>
+            </a>
+            <a className="hero-preview hero-preview-secondary" href="https://nexus-gym-lgs3ytq0m-polyglottentacles-projects.vercel.app" target="_blank" rel="noreferrer">
+              <img src="/nexus-gym.png" alt="NEXUS Gym product shown on desktop and mobile" />
+              <span><strong>NEXUS Gym</strong>Live product <ArrowUpRight aria-hidden="true" size={16} /></span>
             </a>
           </div>
         </section>
