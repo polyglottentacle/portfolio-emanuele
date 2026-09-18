@@ -9,7 +9,7 @@ Public portfolio for Emanuele Giordano, an AI Automation & Product Builder based
 - NEXUS Gym: a React/TypeScript fitness product with automated verification and mobile targets.
 - Dioniso Caffè: a public multilingual hospitality ordering codebase.
 
-The case studies distinguish public source, private source and local prototypes. No customer data, credentials or private repository contents are included.
+The case studies distinguish public source, private source, deployed products and local prototypes. The September 2026 portfolio refresh also records the verified delivery footprint: 14 accessible GitHub repositories, 10 Vercel projects and 2 ACTIVE_HEALTHY Supabase projects. No customer data, credentials or private repository contents are included.
 
 ## Run locally
 
@@ -28,4 +28,4 @@ npm run build
 
 - Live portfolio: https://portfolio-emanuele.vercel.app
 - GitHub: https://github.com/polyglottentacle
-- LinkedIn: https://www.linkedin.com/in/e-g-a5482b355/
+- LinkedIn: https://www.linkedin.com/in/wolfnexushub/
