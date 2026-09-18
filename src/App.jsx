@@ -15,7 +15,7 @@ const projects = [
   },
   {
     number: '02',
-    name: 'Field Ops',
+    name: 'CleanFood Ops',
     subtitle: 'Mobile operations workflow',
     summary: 'A field-first system for shifts, machine evidence and handovers in industrial cleaning operations.',
     problem: 'Operational information was spread across paper, messages and people, weakening handovers.',
@@ -25,6 +25,7 @@ const projects = [
     imageAlt: 'Anonymised responsive field-operations work-area access screen',
     status: 'Operational product · private source',
     href: 'https://cleanfood-ops-source-gzp67vyti-polyglottentacles-projects.vercel.app',
+    linkLabel: 'Open live demo',
   },
   {
     number: '03',
@@ -38,6 +39,7 @@ const projects = [
     imageAlt: 'NEXUS Gym desktop presentation with mobile workout interface',
     status: 'Working product · private source',
     href: 'https://nexus-gym-lgs3ytq0m-polyglottentacles-projects.vercel.app',
+    linkLabel: 'Open live demo',
   },
   {
     number: '04',
@@ -51,6 +53,7 @@ const projects = [
     imageAlt: 'Friendly Dioniso character holding a sandwich and grapes',
     status: 'Public source',
     href: 'https://github.com/polyglottentacle/Dioniso-panini-ia',
+    linkLabel: 'View GitHub project',
   },
 ]
 
@@ -82,7 +85,7 @@ function Project({ project }) {
         </dl>
         <div className="project-meta">
           <span>{project.status}</span>
-          {project.href && <a href={project.href} target="_blank" rel="noreferrer">View source <ArrowUpRight aria-hidden="true" size={16} /></a>}
+          {project.href && <a href={project.href} target="_blank" rel="noreferrer">{project.linkLabel || 'View project'} <ArrowUpRight aria-hidden="true" size={16} /></a>}
         </div>
       </div>
       <figure className="project-visual"><img src={project.image} alt={project.imageAlt} loading="lazy" /></figure>
@@ -109,10 +112,15 @@ export default function App() {
             </div>
             <div className="availability"><MapPin aria-hidden="true" size={18} />Open to opportunities in the Netherlands · Remote or hybrid</div>
           </div>
-          <div className="system-map" aria-label="Visual map connecting real operations, data, automation and people">
-            <div className="map-line map-line-one" /><div className="map-line map-line-two" />
-            <div className="map-node node-data">DATA</div><div className="map-node node-work">WORK</div>
-            <div className="map-node node-proof">PROOF</div><div className="map-node node-people">PEOPLE</div><BrandMark />
+          <div className="hero-showcase" aria-label="Preview of deployed work">
+            <a className="hero-preview hero-preview-main" href="https://nexus-gym-lgs3ytq0m-polyglottentacles-projects.vercel.app" target="_blank" rel="noreferrer">
+              <img src="/nexus-gym.png" alt="NEXUS Gym product shown on desktop and mobile" />
+              <span><strong>NEXUS Gym</strong>Live product <ArrowUpRight aria-hidden="true" size={16} /></span>
+            </a>
+            <a className="hero-preview hero-preview-secondary" href="https://cleanfood-ops-source-gzp67vyti-polyglottentacles-projects.vercel.app" target="_blank" rel="noreferrer">
+              <img src="/cleanfood-ops.png" alt="CleanFood Ops role-based work interface" />
+              <span><strong>CleanFood Ops</strong>Live operations demo <ArrowUpRight aria-hidden="true" size={16} /></span>
+            </a>
           </div>
         </section>
 
@@ -120,7 +128,7 @@ export default function App() {
           <div className="section-heading"><h2 id="work-title">Selected work</h2><p>Four systems with clear boundaries between live products, private source and local prototypes.</p></div>
           <div className="project-list">{projects.map((project) => <Project key={project.name} project={project} />)}</div>
           <p className="stack-line">React · TypeScript · Python · Supabase / PostgreSQL · Vercel · GitHub Actions · AI-assisted delivery</p>
-          <p className="stack-line">Verified footprint: 14 accessible repositories · 10 Vercel projects · 2 ACTIVE_HEALTHY Supabase projects</p>
+          <p className="stack-line">Live demos open in the browser. Private client data and source stay protected.</p>
         </section>
 
         <section className="method-section" id="method" aria-labelledby="method-title">
