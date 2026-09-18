@@ -26,14 +26,14 @@ img { display: block; max-width: 100%; }
 
 .site-header { height: 108px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
 .identity { display: inline-flex; align-items: center; gap: 14px; text-decoration: none; font-size: 1.08rem; font-weight: 700; }
-.brand-mark { width: 58px; height: 58px; object-fit: cover; object-position: 50% 50%; border-radius: 50%; }
+.brand-mark { width: 58px; height: 58px; border: 1px solid var(--cyan); border-radius: 50%; display: grid; place-items: center; color: var(--cyan); background: #081827; font: 700 .92rem Space Mono, monospace; letter-spacing: .04em; }
 .site-header nav { display: flex; gap: clamp(24px, 4vw, 58px); }
 .site-header nav a { color: var(--muted); text-decoration: none; font-size: .98rem; padding: 12px 0; border-bottom: 2px solid transparent; transition: .2s ease; }
 .site-header nav a:hover, .site-header nav a:focus-visible { color: var(--text); border-color: var(--cyan); outline: none; }
 
 .hero { min-height: calc(100vh - 108px); display: grid; grid-template-columns: minmax(0, 1.02fr) minmax(420px, .98fr); align-items: center; gap: 7vw; padding-block: 80px 110px; position: relative; }
 .hero::after { content: ''; position: absolute; left: 50%; bottom: 25px; width: 1px; height: 38px; background: var(--cyan); }
-.hero h1 { margin: 0; max-width: 760px; font-size: clamp(3.7rem, 6.5vw, 6.9rem); line-height: .98; letter-spacing: -.065em; }
+.hero h1 { margin: 0; max-width: 700px; font-size: clamp(3.4rem, 5.5vw, 5.5rem); line-height: .98; letter-spacing: -.065em; }
 .hero h1 span { color: var(--cyan); }
 .hero-copy > p { max-width: 660px; color: var(--muted); font-size: clamp(1.08rem, 1.6vw, 1.35rem); line-height: 1.65; margin: 32px 0; }
 .hero-actions, .contact-actions { display: flex; flex-wrap: wrap; gap: 14px; }
@@ -126,7 +126,7 @@ img { display: block; max-width: 100%; }
   .site-header nav { gap: 18px; }
   .site-header nav a { font-size: .83rem; }
   .hero { padding-block: 58px 90px; gap: 50px; }
-  .hero h1 { font-size: clamp(3rem, 15vw, 4.5rem); }
+  .hero h1 { font-size: clamp(2.75rem, 11vw, 3.6rem); }
   .hero-copy > p { font-size: 1rem; }
   .hero-actions .button { width: 100%; }
   .availability { align-items: flex-start; line-height: 1.5; }
