@@ -129,7 +129,9 @@ img { display: block; max-width: 100%; }
   .hero h1 { font-size: clamp(2.75rem, 11vw, 3.6rem); }
   .hero-copy > p { font-size: 1rem; }
   .hero-actions .button { width: 100%; }
-  .availability { align-items: flex-start; line-height: 1.5; }
+  .hero-actions .button:not(.button-primary) { display: none; }
+  .availability { display: none; }
+  .hero { padding-bottom: 48px; }
   .hero-showcase { min-height: 430px; }
   .hero-preview-main { width: 94%; height: 300px; }
   .hero-preview-secondary { width: 68%; height: 190px; }
