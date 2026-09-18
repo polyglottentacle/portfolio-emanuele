@@ -17,13 +17,14 @@ const projects = [
     number: '02',
     name: 'Field Ops',
     subtitle: 'Mobile operations workflow',
-    summary: 'A field-first interface for clearer tasks, evidence and handoffs in cleaning operations.',
+    summary: 'A field-first system for shifts, machine evidence and handovers in industrial cleaning operations.',
     problem: 'Operational information was spread across paper, messages and people, weakening handovers.',
     build: 'A responsive role-based product concept covering shifts, machines, people, alerts and reports.',
-    proof: 'Desktop and mobile implementation captures, documented QA comparisons and a packaged handoff build.',
+    proof: 'The project has an ACTIVE_HEALTHY Supabase backend and a READY production deployment on Vercel.',
     image: '/cleanfood-ops.png',
     imageAlt: 'Anonymised responsive field-operations work-area access screen',
-    status: 'Anonymised client concept · private source',
+    status: 'Operational product · private source',
+    href: 'https://cleanfood-ops-source-gzp67vyti-polyglottentacles-projects.vercel.app',
   },
   {
     number: '03',
@@ -32,10 +33,11 @@ const projects = [
     summary: 'Workout tracking, AI-assisted coaching and food scanning in one responsive app.',
     problem: 'Training, nutrition and progress lived in disconnected tools with little useful context.',
     build: 'A React and TypeScript app with workout, muscle, coach and food experiences plus Capacitor mobile targets.',
-    proof: 'The repository includes automated checks for build, controls, accessibility, runtime, mobile and integrations.',
+    proof: 'Private GitHub source, automated verification and a READY production deployment on Vercel.',
     image: '/nexus-gym.png',
     imageAlt: 'NEXUS Gym desktop presentation with mobile workout interface',
     status: 'Working product · private source',
+    href: 'https://nexus-gym-lgs3ytq0m-polyglottentacles-projects.vercel.app',
   },
   {
     number: '04',
@@ -100,7 +102,7 @@ export default function App() {
         <section className="hero" aria-labelledby="hero-title">
           <div className="hero-copy">
             <h1 id="hero-title">I turn operational pain into working software<span>.</span></h1>
-            <p>AI Automation &amp; Product Builder based in Lelystad. I design and ship practical tools for hospitality, fitness and business operations.</p>
+            <p>AI Automation &amp; Product Builder based in Lelystad. I turn real operational workflows into deployed products, databases and AI-assisted systems.</p>
             <div className="hero-actions">
               <a className="button button-primary" href="#work">View case studies <ArrowDown aria-hidden="true" size={19} /></a>
               <ExternalLink href="https://github.com/polyglottentacle"><Github aria-hidden="true" size={19} /> GitHub</ExternalLink>
@@ -115,9 +117,10 @@ export default function App() {
         </section>
 
         <section className="work-section" id="work" aria-labelledby="work-title">
-          <div className="section-heading"><h2 id="work-title">Selected work</h2><p>Four systems built around real operational problems.</p></div>
+          <div className="section-heading"><h2 id="work-title">Selected work</h2><p>Four systems with clear boundaries between live products, private source and local prototypes.</p></div>
           <div className="project-list">{projects.map((project) => <Project key={project.name} project={project} />)}</div>
-          <p className="stack-line">React · TypeScript · Python · APIs · automation · AI-assisted delivery</p>
+          <p className="stack-line">React · TypeScript · Python · Supabase / PostgreSQL · Vercel · GitHub Actions · AI-assisted delivery</p>
+          <p className="stack-line">Verified footprint: 14 accessible repositories · 10 Vercel projects · 2 ACTIVE_HEALTHY Supabase projects</p>
         </section>
 
         <section className="method-section" id="method" aria-labelledby="method-title">
@@ -134,15 +137,15 @@ export default function App() {
           <h2 id="about-title">From operations<br />to automation</h2>
           <div className="about-copy">
             <p>I am Emanuele Giordano, based in Lelystad. My background in production lines and commercial kitchens taught me to value clarity, speed and systems that survive contact with real work.</p>
-            <p>I now apply that mindset to AI automation and digital products.</p>
-            <p className="languages">Italian · English · Dutch in progress</p>
+            <p>I now apply that mindset to AI automation and digital products, from database-backed operations tools to mobile product prototypes.</p>
+            <p className="languages">Italian · English · Spanish · Dutch in progress</p>
           </div>
         </section>
 
         <section className="contact-section" aria-labelledby="contact-title">
           <h2 id="contact-title">Looking for a builder who understands operations?</h2>
           <div className="contact-actions">
-            <ExternalLink className="button-primary" href="https://www.linkedin.com/in/e-g-a5482b355/"><Linkedin aria-hidden="true" size={20} /> Connect on LinkedIn</ExternalLink>
+            <ExternalLink className="button-primary" href="https://www.linkedin.com/in/wolfnexushub/"><Linkedin aria-hidden="true" size={20} /> Connect on LinkedIn</ExternalLink>
             <ExternalLink href="https://github.com/polyglottentacle"><Github aria-hidden="true" size={20} /> View GitHub</ExternalLink>
           </div>
         </section>
