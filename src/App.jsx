@@ -3,18 +3,6 @@ import { ArrowDown, ArrowUpRight, Github, Linkedin, MapPin } from 'lucide-react'
 const projects = [
   {
     number: '01',
-    name: 'NEXUS',
-    subtitle: 'Local AI operations system',
-    summary: 'Twelve specialised agents, approval-based memory, provider fallbacks and deterministic health checks.',
-    problem: 'AI work was fragmented across tools, conversations and folders, making continuity hard to verify.',
-    build: 'A local-first Python system with specialised agents, an approval gate, health endpoints and recovery checks.',
-    proof: 'A live local dashboard reports 12/12 agents, system state, cost, memory proposals and recent routing decisions.',
-    image: '/nexus-dashboard.png',
-    imageAlt: 'Live NEXUS dashboard showing system metrics and agent status',
-    status: 'Local working prototype',
-  },
-  {
-    number: '02',
     name: 'CleanFood Ops',
     subtitle: 'Mobile operations workflow',
     summary: 'A field-first system for shifts, machine evidence and handovers in industrial cleaning operations.',
@@ -28,7 +16,7 @@ const projects = [
     linkLabel: 'Open live demo',
   },
   {
-    number: '03',
+    number: '02',
     name: 'NEXUS Gym',
     subtitle: 'Fitness and nutrition companion',
     summary: 'Workout tracking, AI-assisted coaching and food scanning in one responsive app.',
@@ -40,6 +28,18 @@ const projects = [
     status: 'Working product · private source',
     href: 'https://nexus-gym-lgs3ytq0m-polyglottentacles-projects.vercel.app',
     linkLabel: 'Open live demo',
+  },
+  {
+    number: '03',
+    name: 'NEXUS',
+    subtitle: 'Local AI operations system',
+    summary: 'Twelve specialised agents, approval-based memory, provider fallbacks and deterministic health checks.',
+    problem: 'AI work was fragmented across tools, conversations and folders, making continuity hard to verify.',
+    build: 'A local-first Python system with specialised agents, an approval gate, health endpoints and recovery checks.',
+    proof: 'A live local dashboard reports 12/12 agents, system state, cost, memory proposals and recent routing decisions.',
+    image: '/nexus-dashboard.png',
+    imageAlt: 'Live NEXUS dashboard showing system metrics and agent status',
+    status: 'Local working prototype',
   },
   {
     number: '04',
@@ -58,7 +58,7 @@ const projects = [
 ]
 
 function BrandMark() {
-  return <img className="brand-mark" src="/octopus-mark.jpg" alt="One-eyed octopus mark" />
+  return <span className="brand-mark" aria-hidden="true">EG</span>
 }
 
 function ExternalLink({ href, children, className = '' }) {
@@ -88,7 +88,13 @@ function Project({ project }) {
           {project.href && <a href={project.href} target="_blank" rel="noreferrer">{project.linkLabel || 'View project'} <ArrowUpRight aria-hidden="true" size={16} /></a>}
         </div>
       </div>
-      <figure className="project-visual"><img src={project.image} alt={project.imageAlt} loading="lazy" /></figure>
+      {project.href ? (
+        <a className="project-visual" href={project.href} target="_blank" rel="noreferrer" aria-label={'Open ' + project.name}>
+          <img src={project.image} alt={project.imageAlt} loading="lazy" />
+        </a>
+      ) : (
+        <figure className="project-visual"><img src={project.image} alt={project.imageAlt} loading="lazy" /></figure>
+      )}
     </article>
   )
 }
